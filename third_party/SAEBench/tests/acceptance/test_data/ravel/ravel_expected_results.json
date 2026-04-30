@@ -1,0 +1,88 @@
+{
+  "eval_type_id": "RAVEL",
+  "eval_config": {
+    "entity_attribute_selection": {
+      "city": [
+        "Country",
+        "Continent",
+        "Language"
+      ]
+    },
+    "top_n_entities": 500,
+    "top_n_templates": 90,
+    "full_dataset_downsample": null,
+    "num_pairs_per_attribute": 5000,
+    "train_test_split": 0.7,
+    "force_dataset_recompute": false,
+    "model_name": "google/gemma-2-2b",
+    "llm_dtype": "bfloat16",
+    "llm_batch_size": 32,
+    "learning_rate": 0.001,
+    "num_epochs": 2,
+    "train_mdas": false,
+    "n_generated_tokens": 6,
+    "random_seed": 42,
+    "artifact_dir": "artifacts/ravel"
+  },
+  "eval_id": "952c839d-8da3-43f0-9601-73cc17ca5613",
+  "datetime_epoch_millis": 1741632776079,
+  "eval_result_metrics": {
+    "ravel": {
+      "disentanglement_score": 0.5116770985498066,
+      "cause_score": 0.5903865782541796,
+      "isolation_score": 0.4329676188454336
+    }
+  },
+  "eval_result_details": [],
+  "sae_bench_commit_hash": "2875b668fbe1f23ca83977e7461798fc7395e6b8",
+  "sae_lens_id": "blocks.5.hook_resid_post__trainer_2",
+  "sae_lens_release_id": "sae_bench_gemma-2-2b_topk_width-2pow14_date-1109",
+  "sae_lens_version": "5.5.2",
+  "sae_cfg_dict": {
+    "architecture": "standard",
+    "d_in": 2304,
+    "d_sae": 16384,
+    "activation_fn_str": "topk",
+    "apply_b_dec_to_input": true,
+    "finetuning_scaling_factor": false,
+    "context_size": 128,
+    "model_name": "gemma-2-2b",
+    "hook_name": "blocks.5.hook_resid_post",
+    "hook_layer": 5,
+    "hook_head_index": null,
+    "prepend_bos": true,
+    "dataset_path": "monology/pile-uncopyrighted",
+    "dataset_trust_remote_code": true,
+    "normalize_activations": "none",
+    "dtype": "torch.bfloat16",
+    "device": "cuda",
+    "sae_lens_training_version": null,
+    "activation_fn_kwargs": {
+      "k": 80
+    },
+    "neuronpedia_id": "gemma-2-2b/5-sae_bench-topk-res-16k__trainer_2_step_final",
+    "model_from_pretrained_kwargs": {},
+    "seqpos_slice": [
+      null
+    ]
+  },
+  "eval_result_unstructured": {
+    "city_results": {
+      "city_Country": {
+        "cause_score": 0.7624495289367429,
+        "isolation_score": 0.18590604026845636,
+        "disentangle_score": 0.47417778460259963
+      },
+      "city_Continent": {
+        "cause_score": 0.43157894736842106,
+        "isolation_score": 0.6730769230769231,
+        "disentangle_score": 0.5523279352226721
+      },
+      "city_Language": {
+        "cause_score": 0.5771312584573748,
+        "isolation_score": 0.43991989319092123,
+        "disentangle_score": 0.508525575824148
+      }
+    }
+  }
+}
