@@ -26,7 +26,7 @@ from typing import Optional
 
 # Shared paths are anchored at the repository root so these scripts work from any cwd.
 _SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-_REPO_ROOT = os.path.dirname(_SCRIPT_DIR)
+_REPO_ROOT = os.path.dirname(os.path.dirname(_SCRIPT_DIR))
 
 DATA_RESULTS_DIR = os.path.join(_REPO_ROOT, "data_results")
 SHARED_FEATURE_CACHE_DIR = os.path.join(DATA_RESULTS_DIR, "shared_feature_cache")
