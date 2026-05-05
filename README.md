@@ -20,11 +20,12 @@ committed to this repository.
 │   ├── mnist/
 │   │   └── analyse_models.ipynb
 │   └── pythia/
-│       ├── pareto_radar_plot.ipynb
+│       ├── auto_interp_steering_analysis_topk40_model.ipynb
 │       ├── decoder_orthogonality.ipynb
-│       ├── Feature Consistency Analysis Across Random Seeds Pythia model.ipynb
-│       ├── sae_weights_pythia_models copy.ipynb
-│       └── auto_interp_steering_analysis_topk40_model copy.ipynb
+│       ├── Feature_Consistency_Analysis_Across_Random_Seeds_Pythia_model.ipynb
+│       ├── pareto_radar_comparison.py
+│       ├── pareto_radar_plot.ipynb
+│       └── sae_weights_pythia_models.ipynb
 ├── experiments/
 │   ├── mnist/
 │   │   ├── MNIST_not_constrained.ipynb
@@ -42,7 +43,8 @@ committed to this repository.
 │   └── verify_artifact.py
 ├── third_party/
 │   └── dictionary_learning/
-├── external/
+├── data_results/
+├── data_model_weights/
 ├── requirements.txt
 └── ATTRIBUTIONS.md
 ```
@@ -135,8 +137,9 @@ Use these notebooks for the main Pythia SAE analyses:
 
 - `analysis/pythia/pareto_radar_plot.ipynb`
 - `analysis/pythia/decoder_orthogonality.ipynb`
-- `analysis/pythia/Feature Consistency Analysis Across Random Seeds Pythia model.ipynb`
-- `analysis/pythia/sae_weights_pythia_models copy.ipynb`
+- `analysis/pythia/Feature_Consistency_Analysis_Across_Random_Seeds_Pythia_model.ipynb`
+- `analysis/pythia/sae_weights_pythia_models.ipynb`
+- `analysis/pythia/pareto_radar_comparison.py`
 
 These notebooks load the saved evaluation outputs and SAE model weights, then
 produce the comparison plots and summary statistics reported in the paper.
@@ -154,7 +157,7 @@ The main scripts are:
 
 The paper-facing steering plots and summaries are produced in:
 
-- `analysis/pythia/auto_interp_steering_analysis_topk40_model copy.ipynb`
+- `analysis/pythia/auto_interp_steering_analysis_topk40_model.ipynb`
 
 The downloaded `data_results/` artifacts include the steering outputs needed by
 this notebook, so rerunning the steering scripts is not required for the
@@ -177,8 +180,8 @@ Then open the notebooks in this order:
 1. `analysis/mnist/analyse_models.ipynb`
 2. `analysis/pythia/pareto_radar_plot.ipynb`
 3. `analysis/pythia/decoder_orthogonality.ipynb`
-4. `analysis/pythia/Feature Consistency Analysis Across Random Seeds Pythia model.ipynb`
-5. `analysis/pythia/auto_interp_steering_analysis_topk40_model copy.ipynb`
+4. `analysis/pythia/Feature_Consistency_Analysis_Across_Random_Seeds_Pythia_model.ipynb`
+5. `analysis/pythia/auto_interp_steering_analysis_topk40_model.ipynb`
 
 This path reproduces the analyses from precomputed artifacts without requiring
 reviewers to retrain all models from scratch.

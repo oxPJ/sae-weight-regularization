@@ -5,7 +5,7 @@
 - Original: https://github.com/saprmarks/dictionary_learning
 - Original authors: Samuel Marks, Adam Karvonen, Aaron Mueller
 - License: MIT (see third_party/dictionary_learning/LICENSE)
-- Modifications: <FILL IN: one line describing what you changed>
+- Modifications: addition of trainer files with L1 and L2 penalties added to the loss function and related files updates so that a training sweep can be made on those new trainers.
 
 ## sae-bench (pip dependency)
 
@@ -16,4 +16,4 @@
 - Citation: Karvonen et al., "SAEBench: A Comprehensive Benchmark for Sparse
   Autoencoders in Language Model Interpretability," ICML 2025.
 - Used as: pip dependency (not redistributed in this repo). Custom
-  extensions building on SAEBench are in `my_sae_bench_extensions/`.
+  extensions building on SAEBench are in `SAEBench_extensions/`.

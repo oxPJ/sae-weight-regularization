@@ -57,7 +57,6 @@ MAX_NEW_TOKENS = 30
 
 # Feature selection
 N_FEATURES_TO_SAMPLE = 300  # Number of features to sample from all alive features
-MIN_INTERP_SCORE = 0.7  # Set to 0 to include all features (or use autointerp if available) - comment on 06/02/2026 -> note that this is not a used paramter and so there was no selction for min_interp_score
 
 # Reproducibility
 DETERMINISTIC = False
