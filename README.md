@@ -1,7 +1,7 @@
 # SAE Weight Regularization Artifact
 
 This repository contains the code needed to reproduce the analyses for the paper
-on weight regularization of sparse autoencoders.
+on weight regularization of sparse autoencoders (https://arxiv.org/abs/2603.04198).
 
 The repository is organized around three workflow areas:
 
